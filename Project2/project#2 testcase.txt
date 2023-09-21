@@ -1,0 +1,56 @@
+Project#2 testcase
+
+P Sam
+P Liza
+P Mark
+P Amy
+
+F Liza Nonperson
+F Liza Amy
+F Liza Mark
+F Amy Sam
+
+L Liza
+L Amy
+
+U Liza Amy
+L Amy
+
+Q Liza Mark
+
+X
+********************************
+
+The scoring criteria are as follows.
+
+P Sam
+P Liza
+P Mark
+P Amy            -> P command error (-8points)
+
+F Liza Nonperson ->If you operate this command, you will lose 5 points
+F Liza Amy
+F Liza Mark
+F Amy Sam
+
+L Liza          -> L command error (-5points)
+Output->Amy Mark
+
+L Amy 
+Output->Liza Sam
+
+U Liza Amy      
+L Amy           -> U command error (-5points)
+Output->Sam
+
+Q Liza Mark     -> Q command error (-5points)
+Output->Yes
+
+X               -> X command error (-2points)
+
+Compile Error (-15points)
+Termination due to an error while execution the program (-8points)
+
+Each of the command in the program is incomplete (-2points)
+
+Not using linked list and hash table (-10points)
